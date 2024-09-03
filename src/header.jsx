@@ -6,7 +6,6 @@ export function Header(){
         <nav>
             <h1>Try to Remember what Pokemon you pick!</h1>
             <img className="pikachu" src={pikachu}></img>
-           
         </nav>
     )
 }
