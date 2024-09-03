@@ -24,7 +24,6 @@ export function CardContainer({tempPokemonList, scoreCounter, setCounter}){
                 const newArray=[];
                 setPokemonClicked(newArray);
                 setCounter(0);
-                document.querySelector(".currentScore").style.transform = "translateY(100px)";
 
             }
             setPokemonList(shuffleArray([...newPokemonList]));
