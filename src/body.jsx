@@ -140,6 +140,10 @@ export function Body(){
         })
     },[])
     
+    if (!arcanine || !gengar || !nidoking || !pidgeot || !blastoise || !gyarados || !tyranitar || !charizard || !entei || !lapras || !snorlax || !feraligatr) {
+        return <div>Loading...</div>;
+    }
+
     if (arcanine && gengar && nidoking && pidgeot){
         const pokemonList = [arcanine, gengar, nidoking, pidgeot, 
             blastoise, gyarados, tyranitar, charizard, entei,

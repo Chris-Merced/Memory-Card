@@ -24,7 +24,7 @@ export function CardContainer({tempPokemonList, scoreCounter, setCounter}){
                 const newArray=[];
                 setPokemonClicked(newArray);
                 setCounter(0);
-                document.getElementById(".currentScore").style.transform = "translateY(100px)";
+                document.querySelector(".currentScore").style.transform = "translateY(100px)";
 
             }
             setPokemonList(shuffleArray([...newPokemonList]));
@@ -32,17 +32,17 @@ export function CardContainer({tempPokemonList, scoreCounter, setCounter}){
         }  
     }
 
-    
+
     return(
         <div className="cardContainer">
             {newPokemonList.map((pokemon)=>{
-                return <Card 
-                    key={pokemon.id} 
-                    pokemon={pokemon} 
-                    setPokemonList={setPokemonList} 
-                    newPokemonList={newPokemonList}
-                    clickHandler={ShuffleAndRecord}
-                    />
+                    return <Card 
+                        key={pokemon.id} 
+                        pokemon={pokemon} 
+                        setPokemonList={setPokemonList} 
+                        newPokemonList={newPokemonList}
+                        clickHandler={ShuffleAndRecord}
+                        />
             })}
         </div>
     )
